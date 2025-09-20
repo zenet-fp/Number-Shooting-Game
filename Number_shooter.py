@@ -1,5 +1,6 @@
 import random
 
+# coded by Zenet
 
 global num_list
 
@@ -12,7 +13,7 @@ def random_nums():
     print(f"You must form these numbers: {num_list}")
 
 
-class Zenet:
+class NumberGame:
     def __init__(self, difficulty):
         self._difficulty = difficulty
         self._player_score = 0
@@ -126,5 +127,5 @@ class Zenet:
                 self._player_score -= 1
 
 if __name__ == '__main__':
-    p = Zenet("hard")
+    p = NumberGame("hard")
     print(p.main_game())
